@@ -15,7 +15,7 @@ module.exports = {
   },
   getMensJoggers(req, res) {
     const db = req.app.get("db");
-    db.getAllMentsJoggers()
+    db.getAllMensJoggers()
       .then(results => res.status(200).json(results))
       .catch(console.log);
   },
@@ -81,12 +81,12 @@ module.exports = {
       .catch(console.log);
   },
   /******  CART  ******/
-   addToCart = (req, res) => {
+  addToCart(req, res) {
     req.session.cart.push(req.body);
     res.status(200).send(req.session.cart);
   },
-  
-   getCart = (req, res) => {
+
+  getCart(req, res) {
     res.status(200).send(req.session.cart);
   }
 };
