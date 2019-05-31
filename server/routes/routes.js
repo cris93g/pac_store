@@ -24,7 +24,7 @@ module.exports = app => {
   app.get("/api/mens/shirts", getMensShirts);
   app.get("/api/mens/sweater", getMensSweaters);
   app.get("/api/mens/swimwear", getMensSwim);
-  app.get("/api/womens/swimwear", getDress);
+  app.get("/api/womens/dress", getDress);
   app.get("/api/women", getWomansItems);
   app.get("/api/womens/pants", getWomansPants);
   app.get("/api/womens/shorts", getWomansShorts);
